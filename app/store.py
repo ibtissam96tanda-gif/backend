@@ -8,6 +8,8 @@ from typing import Any
 
 from app.config import DATA_DIR, LEGACY_ORDERS, ORDERS_FILE, PRODUCTS_FILE
 
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
 _lock = threading.Lock()
 
 STATUSES = (
